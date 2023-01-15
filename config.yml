@@ -1,0 +1,18 @@
+#/////////////////////////// USER VARIABLES START ///////////////////////////
+threshold_variables:
+  input_error_threshold: 1.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  output_error_threshold: 0.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  overrun_error_threshold: 1.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  frame_error_threshold: 0.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  giants_error_threshold: 0.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  crc_error_threshold: 0.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+  runts_error_threshold: 0.5 # percentage of errors to trigger an alert. 0.1 = 0.1%
+
+file_variables:
+  input_folder: './input/'
+  input_filetype: '.log'
+  output_folder: './output/'
+
+decimal_variables:
+  dec_place: "{:.4%}"
+#/////////////////////////// USER VARIABLES END /////////////////////////// 
