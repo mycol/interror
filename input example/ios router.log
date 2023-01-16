@@ -16,13 +16,13 @@ Embedded-Service-Engine0/0 is administratively down, line protocol is down
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     0 packets input, 0 bytes, 0 no buffer
+     100000 packets input, 0 bytes, 0 no buffer
      Received 0 broadcasts (0 IP multicasts)
-     0 runts, 0 giants, 0 throttles 
-     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     100 runts, 100 giants, 0 throttles 
+     10000 input errors, 1000 CRC, 1000 frame, 1000 overrun, 0 ignored
      0 input packets with dribble condition detected
-     0 packets output, 0 bytes, 0 underruns
-     0 output errors, 0 collisions, 0 interface resets
+     100000 packets output, 0 bytes, 0 underruns
+     10000 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier
@@ -43,7 +43,7 @@ GigabitEthernet0/0 is up, line protocol is up
   Output queue: 0/40 (size/max)
   5 minute input rate 2767000 bits/sec, 295 packets/sec
   5 minute output rate 447000 bits/sec, 261 packets/sec
-     17029021 packets input, 994532961 bytes, 0 no buffer
+     1702902 packets input, 994532961 bytes, 0 no buffer
      Received 0 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles 
      230613 input errors, 0 CRC, 0 frame, 230613 overrun, 0 ignored
@@ -103,7 +103,7 @@ GigabitEthernet0/2 is up, line protocol is up
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
      6336267 packets output, 95254062 bytes, 0 underruns
-     0 output errors, 0 collisions, 0 interface resets
+     1000 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 pause output
@@ -137,7 +137,7 @@ GigabitEthernet0/1/0 is up, line protocol is up
      39641396 packets input, 1650614354 bytes, 0 no buffer
      Received 0 broadcasts (0 IP multicasts)
      0 runts, 1 giants, 0 throttles 
-     1 input errors, 0 CRC, 1 frame, 0 overrun, 0 ignored
+     1 input errors, 1000 CRC, 1 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
      30144940 packets output, 474534348 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
@@ -167,7 +167,7 @@ GigabitEthernet0/2/0 is up, line protocol is up
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
      9835368 packets output, 2075019309 bytes, 0 underruns
-     0 output errors, 0 collisions, 0 interface resets
+     1000 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 pause output
@@ -298,8 +298,8 @@ Tunnel2 is up, line protocol is up
   5 minute output rate 0 bits/sec, 0 packets/sec
      12989 packets input, 1055132 bytes, 0 no buffer
      Received 0 broadcasts (0 IP multicasts)
-     0 runts, 0 giants, 0 throttles 
-     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     1000 runts, 1000 giants, 0 throttles 
+     10000 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
      16243 packets output, 1341260 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
