@@ -6,7 +6,7 @@ import os
 import yaml
 
 author = 'Michael Lorincz'
-version = '0.9.2'
+version = '0.9.3'
 
 with open("config.yml", "r") as file:
     config = yaml.load(file, Loader=yaml.FullLoader)
@@ -112,6 +112,7 @@ for log_file in os.listdir(input_folder):
                         message += " !! ALERT !! Output Errors are above the threshold you set set: " + str(output_error_threshold)+"%."
                         f.write(message + '\n')
                     f.write('\n\n')
+        os.remove(input_folder+log_file)
         f.close()
         print("Finished writing to file: '" + output_file_name+"'")
         print("")
