@@ -8,4 +8,4 @@ You can also set the threshold percentage and decimal placement for output perce
 I hope this helps!
 
 "Putting the 'terror' in interface errors since 2023."
-- Michael Lorincz
+Michael Lorincz
