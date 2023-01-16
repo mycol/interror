@@ -1,5 +1,5 @@
 # IntError
-When ran, this app is designed to scan all the files an a defined folder. Checking for a specific extention (by default '.log'). If found, it checks the files for the 'show interface' output. This output is then parsed using TextFSM/NTC-Templates. The resulting table is referenced to determine if there are errors on interfaces in that file output. if so, it will record the detials to a txt file. Thresholds can also be set to govern "!!ALERT!!" messages, which highlight potential issues.
+When run, this app is designed to scan all the files an a defined folder. Checking for a specific extention (by default '.log'). If found, it checks the files for the 'show interface' output. This output is then parsed using TextFSM/NTC-Templates. The resulting table is referenced to determine if there are errors on interfaces in that file output. if so, it will record the detials to a txt file. Thresholds can also be set to govern "!!ALERT!!" messages, which highlight potential issues.
 
 To use this app...
 Modify the config.yml with input and output folder locations. 
