@@ -13,8 +13,8 @@ file_variables:
   output_folder: 'Z:\show_int_output\'
 
 decimal_variables:
-  dec_place: "{:.4%}"
+  dec_place: "{:.2%}"
 
 #// Setting to 'True' will only review and ouput errors for interfaces that are 'up'. If set to 'False', all interfaces are processsed regardless of status.
 interface_variables:
-  int_status_up: True
+  int_status_up: False

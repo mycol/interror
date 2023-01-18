@@ -34,7 +34,7 @@ packet_fields = ['INPUT_PACKETS', 'OUTPUT_PACKETS']
 
 #// Print the script header
 print("")
-print("*** Starting IntError script. ***")
+print("*** Starting IntError Script. ***")
 print("")
 #// INPUT FILE - Identify the files in the input folder, and parse each file if it ends with the input_filetype
 for log_file in os.listdir(input_folder):
@@ -339,5 +339,4 @@ for log_file in os.listdir(input_folder):
             print("")
 print("*** Finished running script. ***") 
 print("Script version: " + version)
-print("Script written by: " + author) 
 print("")
