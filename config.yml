@@ -1,3 +1,4 @@
+#// These thresholds represent the precentage to be used for the error threshold. For example, if the input error threshold is set to 1.0, then any interface with an input error rate greater than 1.0% will be flagged as an !!ALERT!!.
 threshold_variables:
   input_error_threshold: 1.0
   output_error_threshold: 0.5
@@ -8,10 +9,11 @@ threshold_variables:
   runts_error_threshold: 0.5
 
 file_variables:
-  input_folder: 'Z:\show_int_raw_input\'
   input_filetype: '.log'
+  input_folder: 'Z:\show_int_raw_input\'
   output_folder: 'Z:\show_int_output\'
 
+#// This variable controls the number of decimal places that are displayed in percentages.
 decimal_variables:
   dec_place: "{:.4%}"
 
