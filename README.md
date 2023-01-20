@@ -1,6 +1,7 @@
 <h1>IntError</h1>
 
-<p>A Python script that reads Cisco IOS 'show interfaces' output and uses TextFSM library to extract specified error and packet fields, and provides added context by checking interface status and description. It can filter the interfaces to process based on their status, as defined in a configuration file (config.yml) which also includes threshold variables, file variables, and decimal place settings.</p>
+<p>A Python script that reads Cisco IOS 'show interfaces' output files and uses TextFSM library to extract specified error and packet fields, and provides added context by checking interface status and description. It can filter the interfaces to process based on their status, as defined in a configuration file (config.yml) which also includes alert threshold variables, file variables, and decimal place settings.
+<b>Once run, the program will process and delete the input files, new output files will be saved to the designated output folder. No new output file will be created if no errors are detected. *future version will permit setting variable to retain input files or delete*</b></p>
 
 <h2>Getting Started</h2>
 
@@ -44,16 +45,27 @@ pip install pyyaml</code></pre>
 </ul>
 
 <h2>Output</h2>
-<li>interface: the interface name</li>
-<li>description: the interface description</li>
-<li>input_errors_percentage: the percentage of input errors</li>
-<li>crc_errors_percentage: the percentage of crc errors</li>
-<li>overrun_errors_percentage: the percentage of overrun errors</li>
-<li>frame_errors_percentage: the percentage of frame errors</li>
-<li>runts_errors_percentage: the percentage of runts errors</li>
-<li>giants_errors_percentage: the percentage of giants errors</li>
-<li>output_errors_percentage: the percentage of output errors</li>
+
+<p>The output file will only display an alert if one is detected (dictated by thresholds defined in config.yml).</p>
+<li>Interface: the interface name</li>
+<li>Description: the interface description</li>
+<li>Interface Status: the interface status "up" or "down"</li>
+<li>Input Error count and the percentage of input errors</li>
+<li>CRC errors count and the percentage of crc errors</li>
+<li>Overrun errors count and the percentage of overrun errors</li>
+<li>Frame errors count and the percentage of frame errors</li>
+<li>Runt error count and the percentage of runts errors</li>
+<li>Giant errors count and the percentage of giants errors</li>
+<li>Output errors count and the percentage of output errors</li>
 </ul>
+<br>
+<pre><code>
+GigabitEthernet0/0
+Description: 
+Status: up
+Input Errors: 230613 (13.5424% of all input packets) !!ALERT!! Input Errors are above threshold. Threshold currently set to: 1.0%.
+Overrun Errors: 230613 (13.5424% of all input packets) !!ALERT!! Overrun Errors are above threshold. Threshold currently set to: 1.0%.
+</code></pre>
 <h2>Built With</h2>
 <ul>
   <li><a href='https://www.python.org/'>Python3</a> - Programming language used</li>
