@@ -32,11 +32,7 @@ pip install pyyaml</code></pre>
 <ol>
   <li>Navigate to the directory where the script is located</li>
   <li>Run the script with the command</li>
-  <pre><code> cd interror
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
-python IntError.py</code></pre>
+  <pre><code>python IntError.py</code></pre>
   <li>Retrieve the generated output files from the 'output' folder you defined in the config.yml file. *if no errors found no file would be created</li>
 </ol>
 
