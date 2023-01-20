@@ -1,6 +1,6 @@
 <h1>IntError</h1>
 
-<p>A Python script that parses Cisco IOS show interfaces output, extracts specific error and packet fields using TextFSM library and checks for interface status, and only processes interfaces that are "up". The script reads in a configuration file (config.yml) for threshold variables, file variables, and decimal variables.</p>
+<p>A Python script that reads Cisco IOS 'show interfaces' output and uses TextFSM library to extract specified error and packet fields, and provides added context by checking interface status and description. It can filter the interfaces to process based on their status, as defined in a configuration file (config.yml) which also includes threshold variables, file variables, and decimal place settings.</p>
 
 <h2>Getting Started</h2>
 
