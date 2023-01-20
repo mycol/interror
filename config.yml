@@ -8,10 +8,13 @@ threshold_variables:
   crc_error_threshold: 0.5
   runts_error_threshold: 0.5
 
+#// The default input file type is '.log' and the default input and output folders are './input/' and './output/' respectively. 
+#// The default folders are in the same directory as the script. If you want to use a different folder, you must include the trailing slash.
+#// You can also use the following format for the input_folder and output_folder variables: 'C:\Users\username\Documents\'
 file_variables:
   input_filetype: '.log'
-  input_folder: 'Z:\show_int_raw_input\'
-  output_folder: 'Z:\show_int_output\'
+  input_folder: './input/'
+  output_folder: './output/'
 
 #// This variable controls the number of decimal places that are displayed in percentages.
 decimal_variables:
