@@ -73,6 +73,6 @@ Overrun Errors: 230613 (13.5424% of all input packets) !!ALERT!! Overrun Errors 
   <li><a href='https://yaml.org/'>YAML</a> - Library used for configuration file</li>
 </ul>
 <h2>Author</h2>
-Michael Lorincz - <a href='https://github.com/username'>GitHub</a>
+Michael Lorincz - <a href='https://github.com/mycol'>GitHub</a>
 <h2>License</h2>
-<p>This project
+<p>GPL-3.0 license</p>
