@@ -24,6 +24,7 @@
   <pre><code>pip install textfsm
 pip install pyyaml</code></pre>
   <li>Update the config.yml file with your desired settings</li>
+  <li>Copy your 'show interfaces' input files to the 'input' folder you defined in the config.yml file.</li>
 </ol>
 
 <h3>Running the script</h3>
@@ -32,6 +33,7 @@ pip install pyyaml</code></pre>
   <li>Navigate to the directory where the script is located</li>
   <li>Run the script with the command</li>
   <pre><code>python IntError.py</code></pre>
+  <li>Retrieve the generated output files from the 'output' folder you defined in the config.yml file. *if no errors found no file would be created</li>
 </ol>
 
 <h2>Configuration file</h2>
