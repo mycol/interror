@@ -32,7 +32,11 @@ pip install pyyaml</code></pre>
 <ol>
   <li>Navigate to the directory where the script is located</li>
   <li>Run the script with the command</li>
-  <pre><code>python IntError.py</code></pre>
+  <pre><code> cd interror
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python IntError.py</code></pre>
   <li>Retrieve the generated output files from the 'output' folder you defined in the config.yml file. *if no errors found no file would be created</li>
 </ol>
 
@@ -61,8 +65,7 @@ pip install pyyaml</code></pre>
 <li>Output errors count and the percentage of output errors</li>
 </ul>
 <br>
-<pre><code>
-GigabitEthernet0/0
+<pre><code>GigabitEthernet0/0
 Description: 
 Status: up
 Input Errors: 230613 (13.5424% of all input packets) !!ALERT!! Input Errors are above threshold. Threshold currently set to: 1.0%.
